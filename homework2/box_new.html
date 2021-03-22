@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Arina Stugireva">
+    <meta name="description" content="Создание нового помещения">
+    <meta name="keywords" content="#">
+    <title>Регистрация помещения</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="prj_new.html">Создание проекта</a>
+        <a href="#">Создание помещения</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Новое помещение</h2>
+      <form class="#" action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Основная информация</legend>
+          <label>Номер
+            <input type="text" name="" value="" placeholder="00000"
+                  autofocus required pattern="[1-9]{1}[0-9]{4}"></label>
+          <label>Название<input type="text" name="" value="" required></label>
+          <label>Проект<select class="#" name="prj" required>
+            <option value="pr1">Проект 1</option>
+            <option value="pr2">Проект 2</option>
+            <option value="pr3">Проект 3</option>
+          </select></label>
+          <label>Палуба<select class="#" name="paluba">
+            <option value="plb1">ПрБорт</option>
+            <option value="plb2">ЛБорт</option>
+            <option value="plb3">НП</option>
+          </select></label>
+        </fieldset>
+        <fieldset>
+          <legend>Координаты</legend>
+          <label>X<input type="number" name="x" value="" required></label>
+          <label>Y<input type="number" name="y" value="" required></label>
+          <label>Z<input type="number" name="z" value="" required></label>
+        </fieldset>
+        <fieldset disabled>
+          <legend>Хозяин помещения</legend>
+          <label for="in1">Отдел</label>
+          <input type="text" id="in1" name="" value="">
+          <label for="sl1">Хозяин</label>
+          <input type="text" id="sl1" name="" value="">
+        </fieldset>
+        <fieldset>
+          <legend>Признаки</legend>
+          <label>Сухое<input type="radio" name="pr1" value=""></label>
+          <label>Мокрое<input type="radio" name="pr1" value=""></label>
+          <label>Взрывоопасное <input type="checkbox"></label>
+          <label>Цвет на схеме<input type="color"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Регистрационная информация (readonly)</legend>
+          <label for="dt1">Дата создания</label>
+          <input type="date" id="dt1" name="" value="sysdate" readonly>
+          <label for="in2">Создано</label>
+          <input type="text" id="in2" name="" value="CurrentUser" readonly>
+        </fieldset>
+        <fieldset>
+          <legend>Загрузите проработки помещий</legend>
+          <input type="file" multiple name="boxes[]">
+        </fieldset>
+        <div class="#">
+          <button type="button" name="button">Создать</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
