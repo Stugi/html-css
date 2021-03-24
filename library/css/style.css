@@ -1,0 +1,64 @@
+body{
+/* размер шрифта */
+  font-size: 32px;
+  /* внешний отступ */
+    margin: 0;
+}
+/* цвета */
+/* синий #123C69
+рубиновый #AC3B61
+персиковый #EDC7B7
+серый #BAB2B5
+светло-розовый #EEE2DC */
+
+.light-pink-background{
+  /* цвет фона или подложка*/
+  background: #EEE2DC; /*rgb, rgba- для прозрачности*/
+}
+.light-pink-text{
+  /* цвет текста */
+  color: #EEE2DC;
+
+}
+
+header{
+  background-color: #AC3B61;
+}
+
+footer{
+    background-color: #123C69;
+    margin-top: 15px;
+}
+
+/* поменять ссылки только в footere
+вложенность: применяем к тегам "а" вложенным в footer */
+footer a {
+  color: #BAB2B5;
+}
+
+a{
+  text-decoration: none;
+}
+
+header ul{
+  margin: 0;
+  /* оформление маркеровы */
+  list-style-type: none;
+}
+
+/* браузер самостоятельно накладывает свои стили
+ - > разные браузеры - разные стили */
+
+/* селектор * применяется ко всем элементам
+* {
+  color: pink;
+}
+ */
+
+/* центрирование любого элемента */
+.container{
+  /* width: ; не используется для контейнеров*/
+  max-width: 900px;
+/* 0-top, bottom, auto - right, left */
+  margin: 0 auto ;
+}

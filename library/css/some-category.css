@@ -1,0 +1,32 @@
+.book{
+  /* тень блока */
+  /*: смещение_тени_по-ширине смещение_тени_верх-вниз(по-высоте) радиус_размытия растяжение цвет_тени*/
+  /* rgba */
+  box-shadow: 0 3px 4px 1px rgba(0,0,0,0.5);
+/* rem - относительно шрифтта html (fontsize)
+  для адаптивной верстки*/
+  padding: 1.5rem;
+  margin: 1rem 0;
+  /* цвет текста */
+  color: #123C69;
+}
+
+/* ко всем h3 входящим в класс .book*/
+.book h3{
+  /* тень текста */
+  text-shadow: 5px 5px 10px #123C69;
+}
+
+.book a{
+  /* inline -строчный элемент */
+  /* block - блочный элемент */
+  /* inline-block - блочно-строчный */
+  /* none - скрытие элемента*/
+  display:block;
+  background-color: #123C69;
+  text-align: center;
+  color: #EDC7B7;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
