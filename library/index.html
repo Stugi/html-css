@@ -8,6 +8,10 @@
     <meta name="description" content="site for reading">
     <!-- Подключение  css stylesheet-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
 </head>
 <body class="light-pink-background">
 <header>
@@ -58,9 +62,22 @@
             <a href="one-book.html">Читать</a>
         </div>
     </section>
-    <section>
-        <h2>Книги из жанра 1</h2>
-        <article>
+    <section class="flex-row wrap">
+        <h2 class="strech-title">Книги из жанра 1</h2>
+      <div class="col-4">
+        <article class="book">
+             <h3>Lorem ipsum.</h3>
+             <img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст" height="300" width="150">
+             <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
+                 laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
+                 Ipsam, perferendis!
+             </p>
+             <a href="one-book.html">Читать</a>
+         </article>
+      </div>
+      <div class="col-4">
+        <article class="book">
             <h3>Lorem ipsum.</h3>
             <img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст" height="300" width="150">
             <p>
@@ -70,7 +87,9 @@
             </p>
             <a href="one-book.html">Читать</a>
         </article>
-        <article>
+      </div>
+      <div class="col-4">
+        <article class="book">
             <h3>Lorem ipsum.</h3>
             <img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст" height="300" width="150">
             <p>
@@ -80,20 +99,11 @@
             </p>
             <a href="one-book.html">Читать</a>
         </article>
-        <article>
-            <h3>Lorem ipsum.</h3>
-            <img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст" height="300" width="150">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
-                laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
-                Ipsam, perferendis!
-            </p>
-            <a href="one-book.html">Читать</a>
-        </article>
+      </div>
     </section>
     <section>
         <h2>Книги из жанра 2</h2>
-        <article>
+        <article class="book">
             <h3>Lorem ipsum.</h3>
             <img src="img/1569163751_i-13.jpg" alt="альтернативный текст" height="300" width="150">
             <p>
@@ -103,7 +113,7 @@
             </p>
             <a href="one-book.html">Читать</a>
         </article>
-        <article>
+        <article class="book">
             <h3>Lorem ipsum.</h3>
             <img src="img/1569163751_i-13.jpg" alt="альтернативный текст" height="300" width="150">
             <p>
@@ -113,7 +123,7 @@
             </p>
             <a href="one-book.html">Читать</a>
         </article>
-        <article>
+        <article class="book">
             <h3>Lorem ipsum.</h3>
             <img src="img/1569163751_i-13.jpg" alt="альтернативный текст" height="300" width="150">
             <p>

@@ -58,7 +58,12 @@ header ul{
 /* центрирование любого элемента */
 .container{
   /* width: ; не используется для контейнеров*/
-  max-width: 900px;
+  max-width: 1200px;
 /* 0-top, bottom, auto - right, left */
   margin: 0 auto ;
+}
+
+img{
+ width: 100%;
+ height: auto; /*чтобы картинка не расползалась or height:100%*/
 }
