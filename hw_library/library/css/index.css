@@ -1,0 +1,31 @@
+.strech-title{
+  flex: 1  0 100%;/*100% ширины, для переноса остальных используй wrap у родителя */
+}
+
+/* article{
+  flex: 1;
+} */
+
+.book{
+    margin: 1rem;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.5);
+
+    /* текст на картинку */
+    position: relative;/*фиксируем блок*/
+}
+
+  /* текст на картинку */
+.book h3{
+  position: absolute;/*зафиксировали относительно .book*/
+  top: 0;/*отступ слева*/
+  left: 1rem;
+  right: 1rem;
+  background: #EEE2DC;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.book p{
+  padding: 1rem;
+}

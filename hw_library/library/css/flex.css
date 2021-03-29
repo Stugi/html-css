@@ -1,0 +1,13 @@
+.elem{
+  border: 1px solid orangered;
+  margin: 1rem;
+}
+
+img{
+  width: 49%;
+  padding: 0.5rem;
+}
+
+.navy{
+  background-color: navy; 
+}

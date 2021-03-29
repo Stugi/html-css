@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru" >
+  <head>
+    <meta charset="utf-8">
+    <title>Разметка grid&flex</title>
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header class="lightblue b">
+      <nav>
+        <a href="#" class="horizontal" >Link1</a>
+        <a href="#" class="horizontal">Link2</a>
+        <a href="#" class="horizontal">Link3</a>
+        <a href="#" class="horizontal">Link4</a>
+        <a href="#" class="horizontal">Link5</a>
+      </nav>
+    </header>
+    <div class="flex-row main">
+    <aside class="col-2 dark-green ">
+      <nav class="dark-green flex-container-vertical">
+        <a href="#" class="vertical" >Link1</a>
+        <a href="#" class="vertical">Link2</a>
+        <a href="#" class="vertical">Link3</a>
+        <a href="#" class="vertical">Link4</a>
+      </nav>
+    </aside>
+    <main class="col-10">
+      <div class="flex-row">
+        <div class="offset-1">
+          <img class="img-cut" src="https://picsum.photos/900/100?random=1" >
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="col-3">
+          <div class="elem title-block">
+            <h2>title 2</h2>
+            <img class="img-cut" src="https://picsum.photos/200/300?random=1" >
+          </div>
+        </div>
+        <div class="col-3 title-block">
+          <div class="elem">
+            <h2>title 2</h2>
+            <img class="img-cut" src="https://picsum.photos/200/300?random=3" >
+          </div>
+        </div>
+        <div class="col-3 title-block">
+          <div class="elem">
+            <h2>title 2</h2>
+            <img class="img-cut" src="https://picsum.photos/200/300?random=1" >
+          </div>
+        </div>
+        <div class="col-3 title-block">
+          <div class="elem">
+            <h2>title 2</h2>
+            <img class="img-cut" src="https://picsum.photos/200/300?random=2" >
+          </div>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="col-6 flex-row">
+          <div class="elem flex-row">
+            <img src="https://picsum.photos/200/200?random=3 class="img-cut"" >
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+               esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class="col-3 flex-row">
+          <div class="elem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="col-3 flex-row">
+          <div class="elem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          </div>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="col-3 flex-row">
+          <div class="elem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="col-3 flex-row">
+          <div class="elem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="col-6 flex-row">
+          <div class="elem flex-row">
+            <img src="https://picsum.photos/200/200?random=6" alt="">
+            <p>Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-row">
+          <div class="col-6">
+              <div class="elem flex-row">
+                  <div class="col-6 flex-column">
+                      <div>lor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia de</div>
+                      <img src="https://picsum.photos/400/400?random=8">
+                  </div>
+                  <div class="col-6">
+                      <img src="https://picsum.photos/400/400?random=9" class="img-cut">
+                  </div>
+              </div>
+          </div>
+          <div class="col-6 flex-column">
+              <div class="elem row-6">lor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia de</div>
+              <div class="elem row-6">lor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia de</div>
+          </div>
+      </div>
+    </main>
+  </div>
+    <footer>
+      <div class="green">
+        FOOTER
+      </div>
+    </footer>
+  </body>
+</html>

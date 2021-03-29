@@ -1,0 +1,47 @@
+.pagination span{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  /* высота строки, для кргуа: равна width & height, используется для вертикального выравнивания*/
+  line-height:50px;
+/* рамка: толщина вид(solid) цвет */
+  border: 3px solid #123C69;
+  /* скруглить_углы:  */
+  border-radius: 50%;
+  /* выравнивание по-центру */
+  text-align: center;
+  color: #123C69;
+  margin: 1rem;
+}
+
+
+/* без пробела!!! */
+/* <span>1</span>
+<span class="active">2</span> */
+.pagination span.active{
+  background-color: #123C69;
+  color: #EDC7B7;
+}
+
+/* если с пробелом */
+/* .pagination span .active{} */
+/* <span>1</span>
+<span><a class="active"></a></span> */
+
+.info-autor{
+
+}
+
+.info-genre{
+  margin-left: auto;
+}
+
+.info{
+  display:flex;
+  /* жирность */
+  font-weight: bolder;
+}
+
+.book{
+  color: #123C69;
+}

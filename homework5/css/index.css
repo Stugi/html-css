@@ -1,0 +1,101 @@
+body{
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  display: block;
+}
+
+nav{
+  display: flex;
+  line-height: 80px;
+   justify-content:center;
+   justify-content: space-around;
+}
+
+.main{
+  flex: 1 0 auto;
+}
+
+.elem{
+  border: 0.1rem solid transparent;
+  margin: 10px;
+  background-color: #8c9f72;
+}
+
+.lightblue{
+  background-color: #b0ced9;
+}
+
+.elem:hover{
+  border: 0.1rem solid #1b221a;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+a.horizontal{
+  display: inline-block;
+  text-align: center;
+}
+a.vertical{
+  display: inline-block;
+
+}
+.container{
+  /* width: ; не используется для контейнеров*/
+  max-width: 900px;
+/* 0-top, bottom, auto - right, left */
+  margin: 0 auto ;
+}
+
+footer{
+  height: 80px;
+  background-color: #195110;
+  display: block;
+  flex: 0 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.img-cut{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.green{
+  background-color: #195110;
+}
+.dark-green{
+  background-color: #1b221a;
+}
+
+.flex-container-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title-block{
+
+}
+.title-block h2{
+  margin: 0;
+  color: white;
+  background: #086d81;
+  text-align: center;
+}
+
+
+/* flex-direction: column-reverse;
+
+aside {
+    display: block;
+}

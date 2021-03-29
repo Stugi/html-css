@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flex box</title>
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/flex.css">
+  </head>
+  <body>
+    <main>
+      <div class="flex-row">
+        <div class="col-3">
+          <div class="elem">
+            Элемент1
+          </div>
+          </div>
+        <div class="col-9"><div class="elem">
+          Элемент1
+        </div>
+      </div>
+      </div>
+      <div class="flex-row">
+        <div class="col-8 flex-column">
+          <div><div class="elem">
+            Элемент1
+          </div></div>
+          <div><div class="elem">
+            Элемент1
+          </div></div>
+          <div><div class="elem">
+            Элемент1
+          </div></div>
+        </div>
+        <div class="col-4"><div class="elem">
+          Элемент1
+        </div></div>
+      </div>
+      <div class="flex-row">
+        <div class="col-6 flex-row wrap">
+          <img src="https://picsum.photos/200/300?random=1" class="">
+          <img src="https://picsum.photos/200/300?random=6" class="margin">
+          <img src="https://picsum.photos/200/300?random=2" class="margin">
+          <img src="https://picsum.photos/200/300?random=3" class="margin">
+          <img src="https://picsum.photos/200/300?random=4" class="margin">
+          <img src="https://picsum.photos/200/300?random=5" class="margin">
+        </div>
+        <div class="col-3">Содержимое ячейки</div>
+        <div class="col-3">Содержимое ячейки</div>
+      </div>
+    </main>
+    <footer class="navy">Fotter</footer>
+  </body>
+</html>

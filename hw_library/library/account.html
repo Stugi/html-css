@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+</head>
+<body>
+
+<section>
+    <h2>Добавление книги</h2>
+    <!-- enctype="multipart/form-data" для загрузки файлов -->
+    <form enctype="multipart/form-data" action="#" method="post">
+        <div>
+            <label for="genre">Выбор жанра</label>
+            <select id="genre" name="genre">
+                <option value="genre1">Жанр 1</option>
+                <option value="genre2">Жанр 2</option>
+                <option value="genre3">Жанр 3</option>
+            </select>
+        </div>
+        <div>
+            <label for="title">Введите название книги</label>
+            <input type="text" id="title" name="title" minlength="2" maxlength="100">
+        </div>
+        <div>
+            <label for="page-count">Укажите количество страниц</label>
+            <input type="number" id="page-count" name="page-count" min="1" max="100">
+        </div>
+        <div>
+            <!-- <label>Описание книги</label>-->
+            <textarea placeholder="Описание книги" name="description"></textarea>
+        </div>
+        <div>
+            <!--accept="image/gif,image/png"-->
+            <label for="cover">Загрузить обложку книги</label>
+            <input id="cover" type="file" accept="image/*"
+                   name="cover">
+        </div>
+        <div>
+            <label for="pages">Загрузить страницы</label>
+            <input id="pages" type="file" multiple name="pages[]">
+        </div>
+        <div> <!-- группа чекбоксов -->
+            <span>Возраст, для которого подходит книга</span>
+            <label><input type="checkbox" value="1" name="age[]">до 16</label>
+            <label><input type="checkbox" value="2" name="age[]">от 17 до 21</label>
+            <label><input type="checkbox" value="3" name="age[]">от 21 до 35</label>
+            <label><input type="checkbox" value="4" name="age[]">от 36 до 50</label>
+            <label><input type="checkbox" value="5" name="age[]">от 50</label>
+        </div>
+        <div> <!-- группа радиокнопок -->
+            <span>Читали ли Вы книгу, которую хотите загрузить</span>
+            <label><input type="radio" name="read" value="yes">Да</label>
+            <label><input type="radio" name="read" value="no">Нет</label>
+        </div>
+        <!-- submit, reset, button -->
+        <button type="submit">Добавить</button>
+        <input type="reset" value="Очистить">
+    </form>
+</section>
+
+</body>
+</html>
