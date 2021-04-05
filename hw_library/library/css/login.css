@@ -1,0 +1,162 @@
+body{
+  background-image: url("https://picsum.photos/1000/1000?random=2");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* обязательно content */
+body:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255, 0.2);
+  z-index: -1;
+}
+
+.authorization{
+  background-color: #EEE2DC;
+  padding: 1.7rem;
+  text-align: center;
+}
+
+.authorization div{
+  margin-bottom: 1.3rem;
+}
+.authorization div:last-child{
+  margin-bottom: 0;
+}
+/* селектор атрибута */
+.authorization input[type="email"],
+.authorization input[type="password"]{
+  /* input имеет рамку */
+  /* border: none; */
+  border-style: none;
+  outline-style: none;
+  background: transparent;
+  color: #123C69;
+  font-size: 1.5rem;
+  border-bottom: 3px solid #123C69;
+  /* чтобы не было скругления рамки */
+  border-radius: 0;
+}
+/* Элементы в фокусе */
+.authorization input[type="email"]:focus,
+.authorization input[type="password"]:focus{
+  /* border-style: none; */
+  /* outline-style: none; */
+  /* background: transparent; */
+  /* color: #123C69; */
+  /* font-size: 1.5rem; */
+  color: #AC3B61;
+  border-bottom: 3px solid #AC3B61;
+  /* border-radius: 0; */
+}
+
+input::-webkit-input-placeholder{color: #123C69}
+input::-moz-placeholder{color: #123C69}
+
+input:focus::-webkit-input-placeholder{color: #AC3B61}
+input:focus::-moz-placeholder{color: #AC3B61}
+
+
+/* стилизуем password когда input в фокусе */
+.authorization input[type="email"]:focus + .email,
+.authorization input[type="password"]:focus + .password{
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  font-size: 1.2rem;
+  color: #AC3B61;
+}
+
+.input-wrapper{
+  position: relative;
+}
+.input-wrapper input{
+  padding-left: 2rem;
+  padding-right: 0;
+}
+ .input-wrapper input:focus{
+   padding-left: 0;
+   padding-right: 2rem;
+}
+
+.input-wrapper .password,
+.input-wrapper .email{
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0;
+  font-size: 1.8rem;
+  color: #123C69;
+}
+
+form{
+  width: 300px;
+}
+
+/* 
+.flipswitch {
+  position: relative;
+  width: 86px;
+}
+.flipswitch input[type=checkbox] {
+  display: none;
+}
+.flipswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 50px;
+}
+.flipswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.flipswitch-inner:before, .flipswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
+  font-size: 18px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.flipswitch-inner:before {
+  content: "ON";
+  padding-left: 12px;
+  background-color: #256799;
+  color: #FFFFFF;
+}
+.flipswitch-inner:after {
+  content: "OFF";
+  padding-right: 12px;
+  background-color: #EBEBEB;
+  color: #888888;
+  text-align: right;
+}
+.flipswitch-switch {
+  width: 31px;
+  margin: -3.5px;
+  background: #FFFFFF;
+  border: 2px solid #999999;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 59px;
+  transition: all 0.3s ease-in 0s;
+}
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+  margin-left: 0;
+}
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+  right: 0;
+} */

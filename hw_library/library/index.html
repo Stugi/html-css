@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flex-grid.css">
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
 </head>
 <body class="light-pink-background">
 <header>
-    <nav class="container">
-        <ul>
+        <ul class="menu">
             <li><a href="index.html">Главная</a></li>
-            <li>Книги по жанрам
+            <li class="submenu">Книги по жанрам
                 <ul>
                     <li><a href="some-category.html">Жанр 1</a></li>
                     <li><a href="some-category.html">Жанр 2</a></li>
@@ -27,12 +27,18 @@
             </li>
             <li><a href="login.html">Войти</a></li>
         </ul>
-    </nav>
+        <form class="#" action="#" method="#">
+          <span><!-- or div-->
+            <span class="material-icons md-48 icon">search</span>
+            <input type="text" name="search" value="" placeholder="по автору или названию">
+          </span>
+        </form>
 </header>
 
 <main class="container">
-    <section>
-        <h2>Случайные книги</h2>
+    <section class="random">
+      <!-- 30.03.2021 -->
+        <h2 class="text-shadow-red">Случайные книги</h2>
         <div>
             <img src="https://picsum.photos/200/300?random=1">
             <a href="one-book.html">Читать</a>
@@ -63,32 +69,30 @@
         </div>
     </section>
     <section class="flex-row wrap">
-        <h2 class="strech-title">Книги из жанра 1</h2>
-      <div class="col-4">
+      <h2 class="strech-title text-shadow-blue">Книги из жанра 1</h2>
+      <div class="col-4 flex-row">
         <article class="book">
              <h3>Lorem ipsum.</h3>
              <img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст" height="300" width="150">
              <p>
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
-                 laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
+                 laudantium natus, necess non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
                  Ipsam, perferendis!
              </p>
              <a href="one-book.html">Читать</a>
          </article>
       </div>
-      <div class="col-4">
+      <div class="col-4 flex-row">
         <article class="book">
             <h3>Lorem ipsum.</h3>
             <img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст" height="300" width="150">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
-                laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
-                Ipsam, perferendis!
+                Lorem ipsum dolor sit amet, c
             </p>
             <a href="one-book.html">Читать</a>
         </article>
       </div>
-      <div class="col-4">
+      <div class="col-4  flex-row"> <!-- display: flex;-->
         <article class="book">
             <h3>Lorem ipsum.</h3>
             <img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст" height="300" width="150">

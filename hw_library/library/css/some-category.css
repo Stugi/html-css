@@ -29,4 +29,9 @@
   padding-top: 0.9rem;
   padding-bottom: 0.9rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-top: 2rem; 
+}
+
+.book p{
+  padding-left:2rem;
 }

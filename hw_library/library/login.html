@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Форма входа</title>
+    <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
 <header>
@@ -22,13 +24,47 @@
 </header>
 
 <main>
-    <p>Введите email и пароль для входа или <a href="#">зарегистрируйтесь</a>, если еще нет аккаунта</p>
-    <form action="#" method="post">
-        <input type="email" name="email" placeholder="Введите e-mail">
-        <input type="password" name="password" placeholder="Введите пароль">
-        <label>Запомнить: <input type="checkbox" name="remember" value="remember" checked></label>
-        <input type="submit" value="Войти">
-    </form>
+      <p>Введите email и пароль для входа или <a href="#">зарегистрируйтесь</a>, если еще нет аккаунта</p>
+      <div class="">
+        <form action="#" method="post" class="authorization">
+        <div class="input-wrapper">
+          <input type="email" name="email" placeholder="Введите e-mail">
+          <span class="fa fa-envelope email"></span>
+        </div>
+        <div class="input-wrapper">
+          <input type="password" name="password" placeholder="Введите пароль">
+          <span class="fa fa-key password"></span>
+        </div>
+        <div class="">
+          <label>
+              Запомнить:
+             <input type="checkbox" name="remember" value="remember" checked>
+           </label>
+        </div>
+          <div class="">
+            <input type="submit" value="Войти">
+          </div>
+      </div>
+
+<!-- стилизация select radiobutton checkbox-->
+          <select class="" name="">
+            <option value=""></option>
+          </select>
+          <div class="">
+            <div class=""></div>
+          </div>
+<div class="flipswitch">
+  <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" value="">
+  <label for="fs" class="flipswitch-label">
+    <div class="flipswitch-inner"></div>
+        <div class="flipswitch-switch"></div>
+  </label>
+</div>
+
+
+      </form>
+    </div>
+
 </main>
 
 

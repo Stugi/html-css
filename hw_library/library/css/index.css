@@ -14,6 +14,19 @@
     position: relative;/*фиксируем блок*/
 }
 
+.book a{
+  position: absolute;/*зафиксировали относительно .book*/
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background-color: #123C69;
+  color: #EEE2DC;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
   /* текст на картинку */
 .book h3{
   position: absolute;/*зафиксировали относительно .book*/
@@ -28,4 +41,36 @@
 
 .book p{
   padding: 1rem;
+}
+
+.random{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 0.3rem;
+}
+
+.random h2{
+  grid-column: 1/5;
+}
+
+.random div{/*Родитель*/
+  position: relative;
+}
+
+.random a{/*Ребенок*/
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  top: 40%;
+  background-color: #AC3B61;
+  color: #EEE2DC;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s; /**/
+}
+.random div:hover a{/*Стили применятся к а, который находится в div , при наведении на div*/
+  opacity: 1;
+  transition: opacity 1s; /**/
 }

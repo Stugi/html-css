@@ -1,0 +1,73 @@
+@import "flex-grid.css";
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+  background: linear-gradient(0deg, rgba(245,245,245,1) 0%,
+                                    rgba(245,245,245,1) 65%,
+                                    rgba(130,183,196,1) 99%);
+
+   /* background: -moz-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 99%, rgba(130,183,196,1) 99%); */
+   /* background: -webkit-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 99%, rgba(130,183,196,1) 99%); */
+
+  /* rgb(30, 47, 79); */
+}
+
+a{
+  text-decoration: none;
+}
+header{
+  height: 5vh;
+  line-height: 5vh;
+  /* position: sticky; */
+  /* top: 0px; */
+  white-space: nowrap;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+header a{
+    color: #0b1e31;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+/* header a:hover{
+
+} */
+
+/*header a::before {
+    content: "\26AC";
+    color: transparent;
+    margin-right: 5px;
+}
+header a:hover::before {
+    content: "\26AC";
+    color: #f5f5f5;
+    margin-right: 5px;
+    transition: color .5s;
+} */
+header a:hover {
+    color: #f5f5f5;
+    transition: color .5s;
+}
+
+.img-style{
+  filter: sepia(40%) blur(1px) brightness(75%) saturate(220%);
+  -webkit-filter: sepia(40%) blur(1px) brightness(75%) saturate(220%);
+  -moz-filter: sepia(40%) blur(1px) brightness(75%) saturate(220%);
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+}
+input{
+    border: 0;
+}
