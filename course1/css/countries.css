@@ -59,7 +59,7 @@ header{
     /* box-shadow: inset 0 4px 5px 5px rgb(0 0 0 / 50%); */
     z-index: 2;
     color: White;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 .country img{
@@ -144,4 +144,17 @@ header{
 
 .spacer{
   height: 5vh;
+}
+
+@media  screen  and (max-width: 550px) {
+  .countries>div:nth-child(2n) div img{
+      top: 0;
+      right: inherit;
+  }
+
+  .countries>div:nth-child(2n+1) div img{
+      top: 0;
+      left: inherit;
+  }
+
 }

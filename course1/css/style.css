@@ -38,6 +38,7 @@ header a{
     flex: 1;
     justify-content: center;
     text-align: center;
+    font-size: 1.5rem;
 }
 /* header a:hover{
 
@@ -70,4 +71,23 @@ input:focus, textarea:focus, select:focus{
 }
 input{
     border: 0;
+}
+
+@media screen  and (max-width: 720px) {
+  header a:nth-last-child(1){
+    display: none;
+  }
+}
+@media screen  and (max-width: 520px) {
+  header a:nth-last-child(1),
+  header a:nth-last-child(2){
+    display: none;
+  }
+}
+@media screen  and (max-width: 420px) {
+  header a:nth-last-child(1),
+  header a:nth-last-child(2),
+  header a:nth-last-child(3){
+    display: none;
+  }
 }
