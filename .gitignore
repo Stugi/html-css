@@ -6,5 +6,5 @@ folder/file.js
 #файлы с определенным расширением
 *.txt
 *.webm
-test.html
-test.css
+*/test.html
+*/test.css
